@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Your Therapy Journey</title>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, user-scalable=no"
+		/>
+		<link
+			rel="stylesheet"
+			href="assets/css/main.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		/>
+
+		<script
+			src="https://kit.fontawesome.com/c7c54647d2.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Header -->
+			<header id="header">
+				<!-- Logo -->
+				<div class="logo">
+					<!-- <a href="index.html"><strong>Relativity</strong> by Pixelarity</a> -->
+				</div>
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li class="current">
+							<a href="aboutus.html">About Us</a>
+							<!-- <ul>
+								<li><a href="#OurBackground">Our Background</a></li>
+							</ul> -->
+						</li>
+						<li>
+							<a
+								href="meettheteam.html"
+								class="icon solid fa-angle-down"
+								>Meet The Team</a
+							>
+							<ul>
+								<li><a href="meettheteam.html">Ann Jordan</a></li>
+								<li><a href="meettheteam.html">Mary Coleman</a></li>
+								<li><a href="meettheteam.html">Marie Scully</a></li>
+								<li><a href="meettheteam.html">Mary Malone</a></li>
+							</ul>
+						</li>
+						<li>
+							<a
+								href="services.html"
+								class="icon solid fa-angle-down"
+								>What We Offer</a
+							>
+
+							<ul>
+								<li>
+									<a href="services.html?tab=OurApproach">Our Approach</a>
+								</li>
+								<li>
+									<a href="services.html?tab=IssuesWeWorkWith"
+										>Issues We Work With</a
+									>
+								</li>
+								<li>
+									<a href="services.html?tab=TypesOfTherapy"
+										>Types Of Therapy</a
+									>
+								</li>
+							</ul>
+						</li>
+
+						<li><a href="resources.html">Resources</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Section -->
+			<section class="main alt bg1">
+				<div
+					class="image main"
+					data-position="center"
+				>
+					<img
+						src="images/banner.webp"
+						alt=""
+					/>
+				</div>
+
+				<div
+					id="OurBackground"
+					class="inner style2"
+				>
+					<h4>Our Background</h4>
+
+					<p>
+						We are Humanistic & Integrative Psychotherapists and Counsellors,
+						all accredited by the Irish Association of Humanistic & Integrative
+						Psychotherapy (IAHIP).
+					</p>
+					<p>
+						We all trained with the highly regarded Flatstone Institute in Cork.
+						Flatstone provided an experientially-based training, focused on
+						creating an environment for in-depth relational learning. Their aim
+						was to develop psychotherapists that could offer true healing and
+						life-enhancing psychotherapy. We continue to work in this relational
+						way.
+					</p>
+
+					<p>
+						We are dedicated to creating safe, confidential and non-judgemental
+						spaces. We promote openness, curiosity, authenticity,
+						self-acceptance, self-care and nurturing.
+					</p>
+					<p id="Meet">
+						We draw from a variety of therapeutic models to guide and support
+						you towards self-discovery and healing, in both practical and
+						nurturing ways.
+					</p>
+					<br />
+				</div>
+			</section>
+
+			<section class="main alt bg2">
+				<div
+					id="OurBackground"
+					class="inner style2"
+				>
+					<h4>Members of Therapy Journey Ireland:</h4>
+					<br />
+					<ul>
+						<li>
+							Run our own private practice at various locations in Cork and
+							Kerry
+						</li>
+						<br />
+						<li>Provides in person and online therapy and counselling</li>
+						<br />
+						<li>
+							Offer personalised one-to-one therapy, tailored to the
+							individual’s specific needs
+						</li>
+						<br />
+						<li>
+							Offer therapeutic group options, providing a variety of supportive
+							and collaborative environments for personal growth
+						</li>
+						<br />
+						<li>Work with individuals aged 16+</li>
+						<br />
+						<li>Are fully insured</li>
+						<br />
+						<li>Have completed Childrens First training and GDPR training</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="logos">
+					<img
+						src="images/cflogo.png"
+						alt=""
+					/>
+					<img
+						src="images/iahiplogo.png"
+						alt=""
+					/>
+				</div>
+				<!-- <ul class="icons">
+					<li>
+						<a
+							href="#"
+							class="icon solid alt fa-envelope"
+							><span class="label">Email</span></a
+						>
+					</li>
+				</ul> -->
+				<p class="copyright">&copy; Untitled. All rights reserved.</p>
+			</footer>
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<script>
+			document.querySelectorAll(".button[data-target]").forEach((button) => {
+				button.addEventListener("click", function () {
+					const modalId = this.getAttribute("data-target");
+					const modal = document.querySelector(modalId);
+
+					// Show the modal and trigger the slide-in animation
+					modal.style.display = "block";
+					modal.querySelector(".modal-content").style.animation =
+						"slideIn 0.5s ease-out forwards"; // Trigger slide-in animation
+				});
+			});
+
+			document.querySelectorAll(".close").forEach((close) => {
+				close.addEventListener("click", function () {
+					const modalId = this.getAttribute("data-target");
+					const modal = document.querySelector(modalId);
+					const modalContent = modal.querySelector(".modal-content");
+
+					// Trigger the slide-out animation
+					modalContent.style.animation = "slideOut 0.5s ease-in forwards"; // Trigger slide-out animation
+
+					// After the animation ends, hide the modal completely
+					setTimeout(function () {
+						modal.style.display = "none";
+					}, 500); // Time should match the duration of the slide-out animation
+				});
+			});
+
+			window.onclick = function (event) {
+				if (event.target.classList.contains("modal")) {
+					const modal = event.target;
+					const modalContent = modal.querySelector(".modal-content");
+
+					// Trigger slide-out animation when clicking outside the modal content
+					modalContent.style.animation = "slideOut 0.5s ease-in forwards";
+
+					// After the animation ends, hide the modal completely
+					setTimeout(function () {
+						modal.style.display = "none";
+					}, 500);
+				}
+			};
+		</script>
+	</body>
+</html>
