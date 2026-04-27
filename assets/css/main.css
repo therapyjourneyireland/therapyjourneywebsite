@@ -4690,6 +4690,7 @@ body.is-preload #banner:before {
 		padding: 4rem 0 1rem 0;
 		min-height: 0;
 		padding-top: 8rem;
+		padding-bottom: 8rem;
 	}
 
 	#banner > .more {
