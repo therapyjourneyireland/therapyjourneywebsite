@@ -379,19 +379,21 @@ contactLinks.forEach((link) => {
 		const href = this.getAttribute("href");
 		if (!href) return;
 
-		if (href.startsWith("tel:") || href.startsWith("sms:")) {
+		if (href.startsWith("tel:") || href.startsWith("sms:") || href.startsWith("email:") ) {
 			e.preventDefault();
 
-			const number = href.replace("tel:", "").replace("sms:", "");
+			const number = href.replace("tel:", "").replace("sms:", "").replace("email:", "");
 			const name = this.dataset.name || "";
 
 			modalNumber.textContent = number;
 
 			if (href.startsWith("sms:")) {
-				modalTitle.textContent = name ? `Text ${name}:` : "Text this number:";
-			} else {
-				modalTitle.textContent = name ? `Call ${name}:` : "Call this number:";
-			}
+    modalTitle.textContent = name ? `Text ${name}:` : "Text this number:";
+} else if (href.startsWith("email:")) {
+    modalTitle.textContent = name ? `Email ${name}:` : "Contact this email:";
+} else {
+    modalTitle.textContent = name ? `Call ${name}:` : "Call this number:";
+}
 
 			modal.style.display = "flex";
 		}
