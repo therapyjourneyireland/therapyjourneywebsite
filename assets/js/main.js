@@ -374,7 +374,7 @@ function isMobile() {
 contactLinks.forEach((link) => {
 	link.addEventListener("click", function (e) {
 		// let mobile behave normally
-		if (isMobile()) return;
+		//if (isMobile()) return;
 
 		const href = this.getAttribute("href");
 		if (!href) return;
